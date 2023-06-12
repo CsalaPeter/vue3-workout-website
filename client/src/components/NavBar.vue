@@ -5,11 +5,11 @@ import '../assets/stylesheets/colors.css'
 <template>
   <header>
     <div class="logo">
-      <img src="/logo.png" alt="Logo" />
+      <span>Fit Bird</span>
     </div>
     <nav>
       <ul>
-        <li>Workout</li>
+        <li>Workouts</li>
         <li>Programs</li>
         <li>Challenges</li>
       </ul>
@@ -18,13 +18,19 @@ import '../assets/stylesheets/colors.css'
 </template>
 
 <style>
-.logo img {
-  height: 70px;
+.logo span {
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: var(--primary);
+  color: white;
+  padding-block: 8px;
+  padding-inline: 20px;
 }
 header {
   height: 70px;
   width: 1200px;
   margin: 0 auto;
+  padding-bottom: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;

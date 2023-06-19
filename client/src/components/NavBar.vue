@@ -1,15 +1,16 @@
 <script setup lang="ts">
 import '../assets/stylesheets/colors.css'
+import { RouterLink } from 'vue-router'
 </script>
 
 <template>
   <header>
     <div class="logo">
-      <span>Fit Bird</span>
+      <RouterLink to="/"><span>Fit Bird</span></RouterLink>
     </div>
     <nav>
       <ul>
-        <li>Workouts</li>
+        <RouterLink to="/workouts"><li>Workouts</li></RouterLink>
         <li>Programs</li>
         <li>Challenges</li>
       </ul>
@@ -56,5 +57,9 @@ li:last-child {
 ul {
   display: flex;
   gap: 25px;
+}
+
+ul a {
+  text-decoration: none;
 }
 </style>

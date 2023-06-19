@@ -1,9 +1,10 @@
 import express, { Express } from "express";
 import exerciseRouter from "./routes/exercisesRoutes";
+import workoutsRouter from "./routes/workoutsRoutes";
 
 const app: Express = express();
 const port = process.env.PORT || 3001;
-let routers = [exerciseRouter];
+let routers = [exerciseRouter, workoutsRouter];
 
 app.use(express.json());
 app.use("/api", ...routers);

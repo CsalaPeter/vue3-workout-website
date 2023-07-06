@@ -7,5 +7,11 @@ export type Exercise = {
 export type Workout = {
   workoutID: string
   workoutName: string
-  imgPath: string
+  exercises: [
+    exercise: {
+      exerciseName: string
+      repetition: string
+      imgPath: string
+    }
+  ]
 }

@@ -4,7 +4,7 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-  <header>
+  <header class="navbar">
     <div class="logo">
       <RouterLink to="/"><span>Fit Bird</span></RouterLink>
     </div>
@@ -27,7 +27,7 @@ import { RouterLink } from 'vue-router'
   padding-block: 8px;
   padding-inline: 20px;
 }
-header {
+.navbar {
   height: 70px;
   width: 1200px;
   margin: 0 auto;
